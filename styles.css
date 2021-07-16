@@ -21,8 +21,8 @@ header {
   padding: 0.1em;
   height: 100%;
   display: grid;
-  grid-template-columns:100%;
-  grid-template-rows:3em 10em 4em 3em;
+  grid-template-columns: 100%;
+  grid-template-rows: 3em 10em 4em 3em;
   grid-gap: 0.1em;
 
   /*
@@ -30,7 +30,6 @@ header {
   grid-template-rows: 40px 200px 40px;
   */
 }
-
 
 .header {
   background-color: aqua;
@@ -43,4 +42,29 @@ header {
 }
 .footer {
   background-color: orange;
+}
+/*media queries*/
+@media (min-width: 768px) {
+  .container {
+    font-size: 1.2em;
+    color: red;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 12em 5em 3em;
+  }
+  .header {
+    background-color: lightblue;
+    grid-row: 1/4;
+  }
+  .main {
+    background-color: yellowgreen;
+    grid-column: 2/-1;
+  }
+  .widget-area {
+    background-color: pink;
+    grid-column: 2/-1;
+  }
+  .footer {
+    background-color: lightseagreen;
+    grid-column: 2/-1;
+  }
 }
