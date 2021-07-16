@@ -1,0 +1,46 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: calc(1em + 0.16vw);
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+.container {
+  font-size: 1.2em;
+  border: 0.1em solid grey;
+  padding: 0.1em;
+  height: 100%;
+  display: grid;
+  grid-template-columns:100%;
+  grid-template-rows:3em 10em 4em 3em;
+  grid-gap: 0.1em;
+
+  /*
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 40px 200px 40px;
+  */
+}
+
+
+.header {
+  background-color: aqua;
+}
+.main {
+  background-color: yellow;
+}
+.widget-area {
+  background-color: lightgreen;
+}
+.footer {
+  background-color: orange;
+}
