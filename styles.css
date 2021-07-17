@@ -44,10 +44,8 @@ header {
   background-color: orange;
 }
 /*media queries*/
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .container {
-    font-size: 1.2em;
-    color: red;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 12em 5em 3em;
   }
@@ -66,5 +64,28 @@ header {
   .footer {
     background-color: lightseagreen;
     grid-column: 2/-1;
+  }
+  @media (min-width: 1500px) {
+    .container {
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 19em 4em;
+    }
+    .header {
+      background-color: lightgrey;
+      grid-row: 1 / span 2;
+    }
+    .main {
+      background-color: greenyellow;
+      grid-column: 2/-2;
+    }
+    .widget-area {
+      background-color: darkorange;
+      grid-row: 1 / span 2;
+      grid-column: -1 / -2;
+    }
+    .footer {
+      background-color: darkorchid;
+      grid-column: 2/-2;
+    }
   }
 }
